@@ -1,48 +1,30 @@
-\documentclass[12pt]{article}
-
-\usepackage[backend=biber, style=unified, natbib, maxcitenames=3, maxbibnames=99]{biblatex}
-\usepackage{newtxtext,newtxmath}
-\usepackage[margin=1in]{geometry}
-
-% section header font sizes
-\usepackage{sectsty}
-\sectionfont{\fontsize{12}{15}\selectfont}
-\subsectionfont{\fontsize{12}{15}\selectfont \em}
-\subsubsectionfont{\fontsize{12}{15}\selectfont \normalfont \em}
-
-% section header spacing (none below headers)
-\usepackage[noindentafter]{titlesec}
-\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
-\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
-\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
-
-\pagestyle{empty} % no page numbers
+\documentclass[biblatex, linguex]{uwwpl}
 
 % TODO: add a .bib file here
 \addbibresource{}
 
+\title{Title of Your Amazing Paper\thanks{Acknowledgments here}}
+\author{%
+    FirstName1 LastName1, FirstName2 LastName2 
+    \\\vspace{1em}
+    Department of Linguistics, University of Washington
+    \\
+    Box 352425, Seattle, WA 98195-2425
+    \\
+    \{email1, email2\}@uw.edu
+}
+
 \begin{document}
 
-\begin{center}
-    {\fontsize{14}{16}\selectfont \bf Title of Your Amazing Paper}
-    
-    \vspace{1em}
+\maketitle
 
-    FirstName1 LastName1, FirstName2 LastName2 
+\begin{abstract}
+    Text
+\end{abstract}
 
-    \vspace{1em}
-
-    Department of Linguistics, University of Washington
-
-    Box 352425, Seattle, WA 98195-2425
-
-    \{email1, email2\}@uw.edu
-\end{center}
-
-\paragraph{Abstract:} Text
-
-\paragraph{Keywords:} Keywords
-
+\begin{keywords}
+    keyword1, keyword2, keyword3
+\end{keywords}
 
 \section{Introduction}
 
